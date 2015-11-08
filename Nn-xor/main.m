@@ -9,7 +9,7 @@
 
 clear all, close all;
 
-format long; % mayor presicion.
+format long; % Mayor precision.
 t0 = clock(); % Funcion de tiempo.
 
 % ::::::::::::::::::::::::::::::::::::::::::::::::::: 1.1 Carga de datos
