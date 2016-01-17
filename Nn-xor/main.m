@@ -17,7 +17,7 @@ t0 = clock(); % Funcion de tiempo.
 data = load('./in/dataxor.txt');
 X = (data(:,[1:2]));
 Y = (data(:,3));
-clear data; % liberamos memoria
+clear data; % Liberamos memoria
 
 % :::::::::::::::::::::::::::::::::::::::::::::::::::1.2 Dibujamos dataset
 
@@ -32,7 +32,7 @@ plot(X(3000:3010),Y(3000:3010),'o');
 
 % :::::::::::::::::::::::::::::::::::::::::::::::::: 2. Forward propagation
 
-% :::::::::::::::::: 2.1 caracteristica X0
+% :::::::::::::::::: 2.1 Caracteristica X0
 
 X=[ones(size(X,1),1) X];
 
@@ -72,7 +72,7 @@ save w_3 w_3;
 
 % :::::::::::::::::::::::::::::::::::::::::::::::::::::: 4. Obtencion de aciertos 
 
-% ::::::::::: 4.1 debido a la naturaleza del dataset ( entre 0 y 1) predecimos valores
+% ::::::::::: 4.1 Debido a la naturaleza del dataset ( entre 0 y 1) predecimos valores
 
 for i=1:m
     if(h(i) >= 0.5)
@@ -110,4 +110,3 @@ disp("Error Final:");
 disp(E);
 disp("Tiempo Tomado :");
 disp(elapsed_time);
-
